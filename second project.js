@@ -10,4 +10,12 @@ $(document).ready(function() {
     	$(".box").removeClass(animation);
 		}, 4000);
 	});
+    $(".fourth").on("click", function() {
+		$(this).toggleClass("toggleFourth")
+		if ($(this).hasClass("toggleFourth")) {
+		$(this).animate({"top": "10px"});
+		}else {
+			$(this).animate({"top": "0"});
+		}
+    });
 });
